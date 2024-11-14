@@ -1,0 +1,110 @@
+body { 
+    display: flex;
+    justify-content: center; /*Justifico el contenido al centro de la página web*/
+}
+
+.main_poster {
+    width: 650px; /*Le establezco a mi caja padre un ancho específico*/
+    padding: 20px; /*Genero espacios en blanco en los bordes*/
+    background-color: white; /*Establezco su color de fondo*/
+}
+
+.main_poster-visual {
+    height: 350px; /*Le establezco a mi caja hijo una altura específica*/
+    position: relative; /*Establezco su posición como relativa, para que los demás elementos se muevan en relación a ella*/
+
+    
+    .title {
+        position: absolute; /*Establezco la posición exacta del título en relación a su caja padre*/
+        left: 20px;
+        bottom: 50px;
+
+        .title-1 { /*Le aplico estilo a cada tipo de texto*/
+            background-color: deepskyblue;
+            color: white;
+            width: 145px;
+            font-weight: 900;
+            padding-left: 5px;
+            
+        }
+
+        .title-2 { /*Le aplico estilo a cada tipo de texto*/
+            color: whitesmoke;
+            font-weight: 900;
+            font-size: 2.5rem;
+        }
+    }
+
+    .imagen-icono { 
+        position: absolute; /*Establezco la posición exacta del icono en relación a su caja padre*/
+        right: 20px;
+        bottom: 50px;
+    }
+
+    .imagen-fondo { /*Decido que la imagen de fondo abarcará la totalidad de mi contenedor*/
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main_poster-indicaciones {
+    display: flex; /*Aplico la propiedad para que mis dos cajas hijos se muestren una al lado de otra*/
+    gap: 40px; /*Establezco un espaciado horizontal entre ellas*/
+    margin-top: 30px; /*Separo la sección superior de la sección inferior*/
+
+    .imagen-icono {
+        width: 75px; /*Establezco el tamaño específico de cada uno de los iconos*/
+    }
+
+    .subtitle {
+        
+        div {
+            margin-bottom: 5px; /*Establezco una separación horizontal entre cada texto*/
+        }
+    }
+
+    .subtitle-type1 { /*Le aplico estilo a cada tipo de texto*/
+        color: deepskyblue;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .subtitle-type2 { /*Le aplico estilo a cada tipo de texto*/
+        color: darkturquoise;
+        font-size: 1.2rem;
+
+    }
+}
+
+a {
+    text-decoration: none; /*Le quito el subrayado al hipervínculo del botón*/
+}
+
+.boton-contacto { /*Le aplico estilo al botón y también alineo y acomodo los elementos dentro del mismo*/
+    background-color: deepskyblue;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed; /*Fijo la posición del botón en la página*/
+    bottom: 25px;
+    right: 15px;
+
+    
+
+    img {
+        height: 25px; /*Le asigno una altura específica al icono del botón*/
+    }
+
+    .boton-contacto_mensaje { /*Le aplico estilo al texto del botón*/
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+
+}
